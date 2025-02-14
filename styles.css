@@ -1,0 +1,153 @@
+.wrapper{
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+body{
+  margin: 0;
+}
+
+@font-face {
+  font-family: "BabyDoll";
+  src: url(images/fonts/Baby\ Doll.ttf);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+  font-family: 'BabyDoll';
+  margin: 0;
+  font-weight: 100;
+}
+
+.sharks{
+  width: 100px;
+  height: 100px;
+}
+
+img{
+  margin: 0;
+}
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h2{
+  text-align: center;
+}
+
+.container .yes-no{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.container div button{
+  font-family: 'BabyDoll';
+  background: none;
+  border: none;
+  scale: 3;
+}
+
+.yes{
+  color: #42AB00;
+}
+
+.no{
+  color: #AB0000;
+}
+
+.setJs{
+  display: none;
+}
+
+.qna div{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.container-yes-no,
+.container-pop-up{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scale: 0;
+  transition: all ease-in-out 0.2s;
+}
+
+.container-yes-no .sharks,
+.container-pop-up .sharks{
+  width: 400px;
+  height: 400px;
+}
+
+.container-yes-no h2,
+.container-pop-up h2{
+  font-size: 3rem;
+}
+
+.js-yn{
+  scale: 1;
+}
+
+.container-yes-no button,
+.wro button{
+  background: none;
+  border: none; 
+  color: #AB0000;
+}
+
+.content{
+  display: grid;
+  grid-template-rows: repeat(370px, 12);
+  justify-content: center;
+  gap: 28px;
+}
+.content div img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+.content h4{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 15px;
+}
+
+.content h1{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+}
+
+.content div{
+  width: 370px; height: 370px; background-color: #42AB00; position: relative; border-radius: 10px;
+}
+
+.gallery{
+  display: none;
+}
+
+.gallery-yes{
+  display: inherit;
+}
